@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Reset */
+* {margin: 0; padding: 0;}
+li {list-style: none; }
+a {text-decoration: none; color: #333;}
+
+img,fieldset,button{border: 0;}
+legend{font-size: 0;color: transparent;width: 0;height: 0;overflow: hidden; text-indent: -9999px;}
+input,textarea{outline: 0;}
+.auto_height::after{content: "";display: block; clear: both;}

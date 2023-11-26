@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyunJi's Portfolio</title>
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <!-- modal -->
+        <!-- daon -->
+        <div class="modal" id="m_daon">
+            <!-- <div class="modal_bg"></div> -->
+            <div class="m_close">
+                <iconify-icon icon="clarity:close-line" style="color: white;"></iconify-icon>
+            </div>
+            <div class="modal_box">
+                <div class="modal_img_wrap">
+                    <img src="img/dtl_daon.jpg" alt="daon detail">
+                    <div class="m_btn_box">
+                        <span> <a href="https://www.daondevelop.co.kr/" target="blank">Web Site</a></span>
+                        <span class="m_close_btn">Close</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- daon------------------>
+
+        <!-- hoam -->
+        <div class="modal" id="m_hoam">
+            <!-- <div class="modal_bg"></div> -->
+            <div class="m_close">
+                <iconify-icon icon="clarity:close-line" style="color: white;"></iconify-icon>
+            </div>
+            <div class="modal_box">
+                <div class="modal_img_wrap">
+                    <img src="img/dtl_hoam.jpg" alt="hoam detail">
+                    <div class="m_btn_box">
+                        <span> <a href="http://happing.dothome.co.kr/hoam/index.html" target="blank"> Web Site</a></span>
+                        <span class="m_close_btn">Close</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hoam------------------>
+
+            <!-- hpt -->
+            <div class="modal" id="m_hpt">
+                <!-- <div class="modal_bg"></div> -->
+                <div class="m_close">
+                    <iconify-icon icon="clarity:close-line" style="color: white;"></iconify-icon>
+                </div>
+                <div class="modal_box">
+                    <div class="modal_img_wrap">
+                        <img src="img/dtl_hpt.jpg" alt="hpt detail">
+                        <div class="m_btn_box">
+                            <span> <a href="http://happing.dothome.co.kr/hpt/index.html" target="blank"> Web Site</a></span>
+                            <span class="m_close_btn">Close</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- hpt------------------>
+
+        <!-- shopping -->
+        <div class="modal" id="m_shopping">
+            <!-- <div class="modal_bg"></div> -->
+            <div class="m_close">
+                <iconify-icon icon="clarity:close-line" style="color: white;"></iconify-icon>
+            </div>
+            <div class="modal_box">
+                <div class="modal_img_wrap">
+                    <img src="img/dtl_shopping.jpg" alt="shopping dtl">
+                    <div class="m_btn_box">
+                        <!-- <span> <a href="#"> Web Site</a></span> -->
+                        <span class="m_close_btn">Close</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- shopping------------------>
+
+        <!-- wg -->
+        <div class="modal" id="m_wg">
+            <!-- <div class="modal_bg"></div> -->
+            <div class="m_close">
+                <iconify-icon icon="clarity:close-line" style="color: white;"></iconify-icon>
+            </div>
+            <div class="modal_box">
+                <div class="modal_img_wrap">
+                    <img src="img/dtl_wg.jpg" alt="wg dtl">
+                    <div class="m_btn_box">
+                        <!-- <span>Web Site</span> -->
+                        <span class="m_close_btn">Close</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- wg------------------>
+
+        <!-- gg -->
+        <div class="modal" id="m_gg">
+            <!-- <div class="modal_bg"></div> -->
+            <div class="m_close">
+                <iconify-icon icon="clarity:close-line" style="color: white;"></iconify-icon>
+            </div>
+            <div class="modal_box">
+                <div class="modal_img_wrap">
+                    <img src="img/dtl_gg.jpg" alt="gg detail">
+                    <div class="m_btn_box">
+                        <!-- <span>Web Site</span> -->
+                        <span class="m_close_btn">Close</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- gg------------------>
+
+        <header>
+            <h1><a href="#firstPage"> Hyun Ji Lee
+                <span>Portfolio</a></span>
+            </h1>
+            <ul class="gnb">
+                <li><a href="#secondPage">Resume</a></li>
+                <li><a href="#3rdPage">Web Design</a></li>
+                <li><a href="#9thPage">Graphic Design</a></li>
+                <li><a href="#lastPage">Contact</a></li>
+            </ul>
+            
+            
+
+        </header>
+
+        <div id="fullpage">
+
+            <div id="visual" class="section">
+                <div class="left_box"></div>
+                <div id="container">
+                    
+                    <h1 class="ml10">
+                        <p class="text-wrapper">
+                            <span class="letters">Hello I’m</span>
+                        </p>
+                    </h1>
+                    
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                    <script>
+                        var textWrapper = document.querySelector('.ml10 .letters');
+                            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                            anime.timeline({loop: false})
+                            .add({
+                                targets: '.ml10 .letter',
+                                rotateY: [-90, 0],
+                                duration: 1300,
+                                delay: (el, i) => 45 * i
+                            }).add({
+                                targets: '.ml10',
+                                opacity: 1,
+                                duration: 1000,
+                                easing: "easeOutExpo",
+                                delay: 1000
+                            });
+                    </script>
+                    <div id=flip>
+                    <div><div>Friendly</div></div>
+                    <div><div>UI/UX Designer</div></div>
+                    <div><div>Web Publisher</div></div>
+                    <div><div>Web Designer</div></div>
+                    <div><div>Lee Hyun Ji</div></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="section1" class="section">
+                <div class="left_box">
+                </div>
+                <div class="title_box">
+                    <img src="img/resume.png" alt="">
+                </div>
+                <div class="profile_box"></div>
+                <div class="text_wrap">
+            
+                    <div class="top_wrap">
+                        <div class="edu_box">
+                            <h2>Education</h2>
+                            <span></span>
+                            <ul>
+                                <li>2022.06 &#45; 2022.12</li>
+                                <li>UI/UX 반응형 웹디자인&웹퍼블리셔 NCS 과정 수료</li>
+                                <li>2019.03 &#45; 2021.08</li>
+                                <li>한양 사이버대학교 재무,회계,세무학과</li>
+                                <li>2015.03 &#45; 2017.02</li>
+                                <li>한양 여자 대학교 항공관광과 항공서비스 전공</li>
+                            </ul>
+                        </div>
+                        <div class="experience_box">
+                            <h2>Work Experience</h2>
+                            <span></span>
+                            <ul>
+                                <li>2019.11 &#45; 2022.03</li>
+                                <li>스위스포트 코리아 (Aero Mexico)</li>
+                                <li>2018.04 &#45; 2018.09</li>
+                                <li>Primavera International (해외근무)</li>
+                                <li>2015.11 &#45; 2016.02</li>
+                                <li>롯데호텔월드 (실습)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btm_wrap">
+                        <div class="certi_box">
+                            <h2>Certification</h2>
+                            <span></span>
+                            <ul>
+                                <li>2022.12</li>
+                                <li>웹디자인기능사(취득예정)</li>
+                                <li>2022.08</li>
+                                <li>GTQ 1급 (Photoshop)</li>
+                                <li>2019.08</li>
+                                <li>DELE (B1)</li>
+                                <li>2017.10</li>
+                                <li>2종 보통 운전면허</li>
+                                <li>2015.11</li>
+                                <li>MOS MASTER</li>
+                                <li>2015.06</li>
+                                <li>경영 능력시험 3급(SMAT)</li>
+                            </ul>
+                        </div>
+                        <div class="skill_box">
+                            <h2>Skills</h2>
+                            <span></span>
+                            <div class="skill_wrap ">
+                                <div class="btn_body ps">
+                                    <span style="background-image: url('img/sect1_img_1.png');"></span>
+                                    <p class="count-num" data-count="90">0</p>
+                                </div>
+                                <div class="btn_body html">
+                                    <span style="background-image: url('img/sect1_img_2.png');"></span>
+                                    <p class="count-num" data-count="90">0</p>
+                                </div>
+                                <div class="btn_body figma">
+                                    <span style="background-image: url('img/sect1_img_3.png');"></span>
+                                    <p class="count-num" data-count="85">0</p>
+                                </div>
+                                <div class="btn_body css">
+                                    <span style="background-image: url('img/sect1_img_4.png');"></span>
+                                    <p class="count-num" data-count="90">0</p>
+                                </div>
+                                <div class="btn_body xd">
+                                    <span style="background-image: url('img/sect1_img_5.png');"></span>
+                                    <p class="count-num" data-count="80">0</p>
+                                </div>
+                                <div class="btn_body ppt">
+                                    <span style="background-image: url('img/sect1_img_6.png');"></span>
+                                    <p class="count-num" data-count="96">0</p>
+                                </div>
+                                
+                            </div>       
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 다온개발 -->
+            <div id="section2" class="section sect2_1">
+                <div class="left_box">
+                    <div class="left_img_box">
+                    </div>
+                </div>
+                <div class="title_box">
+                    <img src="img/web_1.png" alt="">
+                </div>
+                <div id="daon" class="sect_box">
+                    <div class="mockup">
+                        <p class="mockup_frame">
+                            <div class="frame">
+                                <span class="site_img"></span>
+                                <span class="site_img site_img_before">
+                                <p> Hover Me !</p>
+                                </span>
+                            </div>
+                            <div class="bottom">
+                                <img src="img/mockup_laptop_bottom.png" alt="">
+                                <div class="mobile_box">
+                                    <img src="img/mockup_mobile_daon.png" alt="" class="mobile">
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="text_box">
+                        <h2>Daon Development </h2>
+                        <strong>(주식회사) 다온개발</strong>
+                        <h1 class="ml11">
+                            <span class="text-wrapper">
+                            <span class="letters">사이트 운영중</span>
+                            </span>
+                        </h1>
+                        
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+                        <span class="line_btm"></span>
+                        <ul class="list">
+                            <li><span>Type</span>Responsive Web</li>
+                            <li><span>Page</span>Main + Sub*11 + Detail*4</li>
+                            <li><span>Tool</span>Figma, Photoshop, Html5, Css3, JS(jQuery)</li>
+                            <li><span>Process</span>Kakao Map, Xe, SwiperSlide, Fullpage js</li>
+                            <li><span>참여도</span>100%</li>
+                        </ul>
+                        <div class="btn_box">
+                            <a href="#" class="hvr-shutter-out-horizontal dtl">Detail +</a>
+                            <a href="https://www.figma.com/file/dwTuAGdKd6h3PLbNCFxDzm/daon?node-id=0%3A1&t=c3sBTJK8JSvbPnHL-1" class="hvr-shutter-out-horizontal" target="_blank">Prototype</a> <a href="https://www.daondevelop.co.kr/" class="hvr-shutter-out-horizontal" target="_blank">Web Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 호암미술관 -->
+            <div id="section2" class="section sect2_2">
+                <div class="left_box">
+                    <div class="left_img_box">
+                    </div>
+                </div>
+                <div class="title_box">
+                    <img src="img/web_2.png" alt="">
+                </div>
+                <div id="hoam" class="sect_box">
+                    <div class="mockup">
+                        <p class="mockup_frame">
+                            <div class="frame">
+                                <span class="site_img"></span>
+                                <span class="site_img site_img_before">
+                                    <p> Hover Me !</p>
+                                </span>
+                            </div>
+                            <div class="bottom">
+                                <img src="img/mockup_laptop_bottom.png" alt="">
+                            </div>
+                        </p>
+                    </div>
+                    <div class="text_box">
+                        <h2>Hoam Art Center</h2>
+                        <strong>호암미술관</strong>
+                        <span class="line_btm"></span>
+                        <ul class="list">
+                            <li><span>Page</span>Main + Sub*6</li>
+                            <li><span>Tool</span>Figma, Photoshop, Html5, Css3, JS(jQuery)</li>
+                            <li><span>Process</span> SwiperSlide, Youtube Video link</li>
+                            <li><span>참여도</span>100%</li>
+                        </ul>
+                        <div class="btn_box">
+                            <a href="#" class="hvr-shutter-out-horizontal dtl">Detail +</a>
+                            <a href="https://www.figma.com/file/gDz7lYskofzfyGkqexz0eY/%ED%98%B8%EC%95%94?node-id=0%3A1&t=aSuAlqNdzReHxSDZ-1" class="hvr-shutter-out-horizontal" target="_blank">Prototype</a> <a href="hoam/index.html" class="hvr-shutter-out-horizontal" target="blank">Web Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- 아이엔여기 -->
+            <div id="section2" class="section sect2_3">
+                <div class="left_box">
+                    <div class="left_img_box">
+                    </div>
+                </div>
+                <div class="title_box">
+                    <img src="img/web_3.png" alt="">
+                </div>
+                <div id="hpt" class="sect_box">
+                    <div class="mockup">
+                        <p class="mockup_frame">
+                            <div class="frame">
+                                <span class="site_img"></span>
+                                <span class="site_img site_img_before">
+                                    <p> Hover Me !</p>
+                                </span>
+                            </div>
+                            <div class="bottom">
+                                <img src="img/mockup_laptop_bottom.png" alt="">
+                                <div class="mobile_box">
+                                    <img src="img/mockup_mobile_hpt.png" alt="" class="mobile">
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="text_box">
+                        <h2>Medical Clinic</h2>
+                        <strong>아이엔여기 한의원</strong>
+                        <span class="line_btm"></span>
+                        <ul class="list">
+                            <li><span>Page</span>Main + Sub*4 (PC,Mobile)</li>
+                            <li><span>Tool</span>Photoshop, Html5, Css3, JS(jQuery)</li>
+                            <li><span>Process</span> Floting Button, Animation</li>
+                            <li><span>참여도</span>100%</li>
+                        </ul>
+                        <div class="btn_box">
+                            <a href="#" class="hvr-shutter-out-horizontal dtl">Detail +</a>
+                    <a href="hpt/index.html" class="hvr-shutter-out-horizontal" target="blank">Web Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- shopping mall -->
+            <div id="section2" class="section sect2_4">
+                <div class="left_box">
+                    <div class="left_img_box">
+                    </div>
+                </div>
+                <div class="title_box">
+                    <img src="img/web_4.png" alt="">
+                </div>
+                <div id="shopping" class="sect_box">
+                    <div class="mockup">
+                        <p class="mockup_frame">
+                            <div class="frame">
+                                <span class="site_img"></span>
+                                <span class="site_img site_img_before">
+                                    <p> Hover Me !</p>
+                                </span>
+                            </div>
+                            <div class="bottom">
+                                <img src="img/mockup_laptop_bottom.png" alt="">
+
+                            </div>
+                        </p>
+                    </div>
+                    <div class="text_box">
+                        <h2>Shopping Mall</h2>
+                        <strong>해오름 가구</strong>
+                        <span class="line_btm"></span>
+                        <ul class="list">
+                            <li><span>Page</span>Main</li>
+                            <li><span>Tool</span>Photoshop, Html5, Css3, JS(jQuery)</li>
+                            <li><span>Process</span> Cafe24</li>
+                            <li><span>참여도</span>100%</li>
+                        </ul>
+                        <div class="btn_box">
+                            <a href="#" class="hvr-shutter-out-horizontal dtl">Detail +</a>
+                    <!-- <a href="#" class="hvr-shutter-out-horizontal">Web Site</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- wg -->
+            <div id="section2" class="section sect2_5">
+                <div class="left_box">
+                    <div class="left_img_box">
+                    </div>
+                </div>
+                <div class="title_box">
+                    <img src="img/web_5.png" alt="">
+                </div>
+                <div id="wg" class="sect_box">
+                    <div class="mockup">
+                        <p class="mockup_frame">
+                            <div class="frame">
+                                <span class="site_img"></span>
+                                <span class="site_img site_img_before">
+                                    <p> Hover Me !</p>
+                                </span>
+                            </div>
+                            <div class="bottom">
+                                <img src="img/mockup_laptop_bottom.png" alt="">
+                            </div>
+                        </p>
+                    </div>
+                    <div class="text_box">
+                        <h2>WoongJin Food</h2>
+                        <strong>웅진식품</strong>
+                        <span class="line_btm"></span>
+                        <ul class="list">
+                            <li><span>Page</span>Main + Sub*1 </li>
+                            <li><span>Tool</span>Figma, Photoshop</li>
+                            <li><span>Process</span> Design only</li>
+                            <li><span>참여도</span>100%</li>
+                        </ul>
+                        <div class="btn_box">
+                            <a href="#" class="hvr-shutter-out-horizontal dtl">Detail +</a>
+                    <a href="https://www.figma.com/file/Yr9aRp5fhTe7cnWkQJTFnT/%EC%9B%85%EC%A7%84%EC%8B%9D%ED%92%88?node-id=0%3A1&t=vjFNadpOf0yXipql-1" class="hvr-shutter-out-horizontal" target="blank">Prototype</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- gg -->
+            <div id="section2" class="section sect2_6">
+                <div class="left_box">
+                    <div class="left_img_box">
+                    </div>
+                </div>
+                <div class="title_box">
+                    <img src="img/web_6.png" alt="">
+                </div>
+                <div id="gg" class="sect_box">
+                    <div class="mockup">
+                        <p class="mockup_frame">
+                            <div class="frame">
+                                <span class="site_img"></span>
+                                <span class="site_img site_img_before">
+                                    <p> Hover Me !</p>
+                                </span>
+                            </div>
+                            <div class="bottom">
+                                <img src="img/mockup_laptop_bottom.png" alt="">
+                            </div>
+                        </p>
+                    </div>
+                    <div class="text_box">
+                        <h2>GongGan Architecture</h2>
+                        <strong>공간건축</strong>
+                        <span class="line_btm"></span>
+                        <ul class="list">
+                            <li><span>Page</span>Main + Sub*4 </li>
+                            <li><span>Tool</span>Xd, Photoshop</li>
+                            <li><span>Process</span> Floting Button, Animation</li>
+                            <li><span>참여도</span>100%</li>
+                        </ul>
+                        <div class="btn_box">
+                            <a href="#" class="hvr-shutter-out-horizontal dtl">Detail +</a>
+                    <!-- <a href="#" class="hvr-shutter-out-horizontal">Web Site</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="section3" class="section">
+                <div class="left_box">
+                </div>
+                <div class="title_box">
+                    <img src="img/graphic.png" alt="">
+                </div>
+                <div id="graphic1" class="sect_box">
+                    <div class="img_box">
+                        <img src="img/graphic_logo.jpg" alt="logo">
+                    </div>
+                    <div class="text_box">
+                        <h2>Logo Design</h2>
+                        <span class="line_btm"></span>
+                        <h3>Daon Development</h3>
+                        <strong>(주식회사) 다온개발</strong>
+                        <p>다온의 영어 철자중 A에 정직함을 의미하는 직선과 사선을 합하여
+                            정직하게 나아가겠다는 기업의 이념을 강조하였으며,
+                            <br>고급스러운 느낌을
+                            더해주는 도형은 철자 A의 가운데 선을 변형한 것으로, 모두 함께 성공으로
+                            나아가자는 기업의 비전을 담아 함게 일어설 수 있는 디딤돌을 표현했습니다.
+                        </p>
+                        <h2>Color Palette</h2>
+                        <span class="line_btm"></span>
+                        <ul class="pal_box">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="section3" class="section">
+                <div class="left_box">
+                </div>
+                <div class="title_box">
+                    <img src="img/graphic.png" alt="">
+                </div>
+                <div id="graphic2" class="sect_box">
+                    <div class="tit_box">
+                        <h2>Banner Design</h2>
+                        <span></span>
+                    </div>
+                    <div class="img_box">
+                        <div class="left_img">
+                            <img src="img/banner_img_1.png" alt="">
+                            <img src="img/banner_img_2.png" alt="">
+                        </div>
+                        <div class="right_img">
+                            <img src="img/banner_img_3.png" alt="">
+                            <img src="img/banner_img_4.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="section4" class="section">
+                <div class="left_box">
+                </div>
+                <div class="title_box">
+                    <img src="img/ctc.png" alt="">
+                </div>
+                <div id="ctc" class="sect_box">
+                    <div class="tit_box">
+                        <h2>Contact</h2>
+                        <span></span>
+                    </div>
+                    <div class="ctc_box">
+                        <p>더 궁금한것이 있으신가요? <br>
+                            이쪽으로 연락주세요!</p>
+                        <div class="pdf_box">
+                            <a href="https://drive.google.com/file/d/1ckdmhFWxIDIRcugG4rJtRLpfnQINeSWe/view?usp=sharing" target="_blank" class="hvr-underline-from-left">See Porfolio(PDF) Version</a>
+                            <div class="img_wrap">
+                                <img src="img/ctc_qr_1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="color_box " id="colorBtn">
+                            <div class="email">
+                                <em>E-mail</em>
+                                <strong>happing_hj@naver.com</strong>
+                            </div>
+                            <div class="talk">
+                                <em>Kakao Talk</em>
+                                <div class="qr_box">
+                                    <img src="img/ctc_qr_2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/jquery-3.6.1.min.js"></script>
+    <script src="script/my.js"></script>
+    <script src="script/jquery.fullpage.js"></script>
+</body>
+</html>
